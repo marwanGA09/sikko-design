@@ -60,7 +60,7 @@ svg path {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 16px;
+  padding: 16px 38px;
   gap: 32px;
   flex-wrap: wrap;
 }
@@ -110,7 +110,7 @@ svg path {
 .carding-section {
   max-width: 1800px;
   margin: 78px auto;
-  padding: 54px 0;
+  padding: 54px 38px;
 }
 
 .card-container {
@@ -168,7 +168,7 @@ svg path {
 .qoutes-container {
   max-width: 1800px;
   margin: 78px auto;
-  padding: 8px 16px;
+  padding: 16px 38px;
   display: flex;
   flex-direction: column;
 }
@@ -191,7 +191,7 @@ blockquote {
 .sign-up {
   max-width: 1800px;
   margin: 78px auto;
-  padding: 32px 24px;
+  padding: 32px 38px;
   background-color: #3882f6;
   color: #f9faf8;
 }
