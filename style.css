@@ -62,16 +62,18 @@ svg path {
   align-items: center;
   padding: 8px 16px;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .left-hero {
-  flex: 1 1 700px;
+  flex: 1 1 400px;
   height: auto;
-  margin-left: 100px;
+  padding: 50px;
+  /* margin-left: 100px; */
 }
 
 .right-hero {
-  flex: 1 1 450px;
+  flex: 1 1 300px;
   padding: 50px;
   border-radius: 15px;
   height: auto;
@@ -199,6 +201,15 @@ blockquote {
   justify-content: space-between;
   align-items: center;
   font-size: 32px;
+  flex-wrap: wrap;
+}
+
+.sign-up-btn {
+  flex: 0 0 auto;
+}
+
+.sign-up-p {
+  flex: 1 0 450px;
 }
 
 .sign-up h2 {
