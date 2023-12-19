@@ -14,14 +14,15 @@ body {
 
 header,
 main,
-footer {
+footer,
+.sign-up {
   width: clamp(300px, 100vw, 2600px);
   margin: 0 auto;
 }
 
 header {
   background-color: #1f2937;
-  padding: min(0.8rem, 100px, 2vh) min(1.6rem, 450px, 5vw);
+  padding: min(0.8rem, 100px, 1vh) min(1.6rem, 450px, 3vw);
 }
 
 .nav-main {
@@ -29,10 +30,14 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
+  /* gap: 5rem; */
   align-items: center;
   /* padding: 8px 16px; */
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem min(0, 1.6rem);
+}
+
+.nav-main img {
+  width: min(20vw, 267px);
 }
 
 .links {
@@ -45,7 +50,7 @@ header {
 
 a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: min(2vw, 30px);
   font-weight: 500;
   padding: 8px 16px;
   color: #fff;
@@ -72,47 +77,53 @@ li {
 
 .hero-container {
   width: 100%;
-  margin: min(80px, 4vh) 0;
+  margin: min(80px, 0.1vh) 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
-  gap: 32px;
+  padding: min(1vw, 1.6rem) min(2vw, 6rem);
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
 .left-hero {
-  flex: 1 1 400px;
+  flex: 1 1 450px;
   height: auto;
-  padding: 64px;
+  padding: min(2vw, 6.4rem) 1rem;
 }
 
 .right-hero {
-  flex: 1 1 300px;
-  padding: 64px;
+  flex: 1 1 350px;
+  padding: min(5vw, 64px);
   border-radius: 15px;
   height: auto;
 }
 
+/* .hero-container img {
+  width: clamp(350px, 40%, 70vw);
+} */
 .left-hero h1 {
-  font-size: 52px;
+  font-size: min(6vw, 6.4rem);
   font-weight: 900;
   color: #f9faf8;
   margin-bottom: 16px;
 }
 
-.left-hero h2 {
-  font-size: 18px;
+.left-hero p {
+  max-width: min(100%, 75ch);
+  letter-spacing: 0.1rem;
+  word-spacing: 0.4rem;
+  font-size: min(3vw, 2.2rem);
   color: #e5e7eb;
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem;
 }
 
 .btn {
-  padding: 16px 32px;
+  padding: min(2vw, 1.6rem) min(4vw, 3.2rem);
   background-color: #3882f6;
   color: #f9faf8;
-  margin: 16px 24px;
-  font-size: 24px;
+  margin: 1.6rem 2.4rem;
+  font-size: min(3vw, 24px);
   border-radius: 12px;
 }
 
@@ -123,9 +134,9 @@ li {
 /* carding section */
 
 .carding-section {
-  max-width: 1800px;
-  margin: 80px auto;
-  padding: 64px 40px;
+  /* max-width: 1800px; */
+  margin: min(5vw, 80px) auto;
+  padding: min(4vw, 64px) min(1vw, 40px);
 }
 
 .card-container {
@@ -137,22 +148,23 @@ li {
 }
 
 .card {
-  max-width: 330px;
+  max-width: min(80%, 450px);
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 16px;
+  padding: min(2vw, 16px) min(1vw, 16px);
   align-items: center;
 }
 
 .card h4 {
-  font-size: 30px;
+  font-size: min(7vw, 3rem);
   margin-bottom: 12px auto 0;
+  align-items: center;
 }
 
 .card p {
-  font-size: 20px;
+  font-size: min(5vw, 2.4rem);
   font-weight: 300;
   padding: 8px;
 }
@@ -177,36 +189,36 @@ li {
   display: flex;
   justify-content: space-between;
   background-color: #e5e7eb;
-  padding: 64px 0;
+  /* padding: min(6vw, 64px) 0; */
 }
 
 .qoutes-container {
-  max-width: 1800px;
-  margin: 80px auto;
+  /* max-width: 1800px; */
+  margin: min(9vw, 80px) auto;
   padding: 16px 40px;
   display: flex;
   flex-direction: column;
 }
 
 blockquote {
-  padding: 32px;
-  font-size: 28px;
+  /* padding: 32px; */
+  font-size: min(5vw, 28px);
 }
 
 .qout-name {
   display: inline-block;
   align-self: flex-end;
   padding: 16px 32px;
-  margin: 0 64px;
-  font-size: 30px;
+  margin: 0 0 0 6.4rem;
+  font-size: min(6vw, 30px);
 }
 
 /*  sign-up  */
 
 .sign-up {
-  max-width: 1800px;
-  margin: 80px auto;
-  padding: 32px 40px;
+  /* max-width: 1800px; */
+  margin: min(10vw, 80px) auto;
+  padding: 32px min(2vw, 4rem);
   background-color: #3882f6;
   color: #f9faf8;
 }
@@ -215,7 +227,7 @@ blockquote {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 30px;
+  font-size: min(6vw, 30px);
   flex-wrap: wrap;
 }
 
@@ -224,7 +236,7 @@ blockquote {
 }
 
 .sign-up-p {
-  flex: 1 0 450px;
+  /* flex: 1 0 min(450px); */
 }
 
 .sign-up h2 {
@@ -255,5 +267,5 @@ footer {
 .Copywrite {
   max-width: 1800px;
   padding: 8px 16px;
-  font-size: 24px;
+  font-size: min(6vw, 24px);
 }
