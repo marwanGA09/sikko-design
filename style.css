@@ -4,6 +4,7 @@
 
 body {
   font-size: 1.6rem;
+  font-family: Ubuntu;
 }
 
 * {
@@ -125,6 +126,7 @@ li {
   margin: 1.6rem 2.4rem;
   font-size: min(3vw, 24px);
   border-radius: 12px;
+  border: 0;
 }
 
 .btn:hover {
