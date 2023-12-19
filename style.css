@@ -1,25 +1,44 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+header,
+main,
+footer {
+  width: clamp(300px, 100vw, 2600px);
+  margin: 0 auto;
+}
+
 header {
   background-color: #1f2937;
+  padding: min(0.8rem, 100px, 2vh) min(1.6rem, 450px, 5vw);
 }
 
 .nav-main {
-  max-width: 1800px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  gap: 5rem;
   align-items: center;
-  padding: 8px 16px;
+  /* padding: 8px 16px; */
+  padding: 0.8rem 1.6rem;
 }
 
 .links {
   display: flex;
-  gap: 16px;
+  gap: 1.3rem;
+  margin-right: 2vw;
 }
 
 /* removing dumb things */
@@ -29,11 +48,11 @@ a {
   font-size: 30px;
   font-weight: 500;
   padding: 8px 16px;
-  border-radius: 8px;
   color: #fff;
 }
 
 a:hover {
+  border-radius: 8px;
   color: #3882f6;
   background-color: #fff;
 }
@@ -42,21 +61,18 @@ li {
   list-style: none;
 }
 
-svg path {
-  fill: #fff;
-}
-
 /* Hero section */
 
 .hero {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #1f2937;
 }
 
 .hero-container {
-  max-width: 1800px;
-  margin: 80px auto;
+  width: 100%;
+  margin: min(80px, 4vh) 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
