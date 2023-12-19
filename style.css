@@ -58,7 +58,7 @@ a {
 
 a:hover {
   border-radius: 8px;
-  color: #3882f6;
+  color: #153c7a;
   background-color: #fff;
 }
 
@@ -120,7 +120,7 @@ li {
 
 .btn {
   padding: min(2vw, 1.6rem) min(4vw, 3.2rem);
-  background-color: #3882f6;
+  background-color: #153c7a;
   color: #f9faf8;
   margin: 1.6rem 2.4rem;
   font-size: min(3vw, 24px);
@@ -218,8 +218,8 @@ blockquote {
 .sign-up {
   /* max-width: 1800px; */
   margin: min(10vw, 80px) auto;
-  padding: 32px min(2vw, 4rem);
-  background-color: #3882f6;
+  padding: 32px min(6vw, 4rem);
+  background-color: #153c7a;
   color: #f9faf8;
 }
 
@@ -246,7 +246,7 @@ blockquote {
 }
 
 .sign-up-btn {
-  color: #3882f6;
+  color: #204f9b;
   background-color: #e5e7eb;
 }
 
@@ -267,5 +267,5 @@ footer {
 .Copywrite {
   max-width: 1800px;
   padding: 8px 16px;
-  font-size: min(6vw, 24px);
+  font-size: min(4vw, 24px);
 }
